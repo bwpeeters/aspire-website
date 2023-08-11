@@ -174,8 +174,19 @@
          <br>
 	      
          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-       <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-a9150b6d-4bd9-41ee-a7d2-cfff1f8b980a"></div>
+       <script src="https://unpkg.com/instafeed@2.4.7/dist/instafeed.min.js"></script>
+<script>
+  var feed = new Instafeed({
+    accessToken: 'IGQVJWbF9SRFBIMEtEbFZAkUXVsa1JlbFZA6ZAnBtSHd6ZAEhSRUlHSUdoSXJpUTNVV2NzWnM4bDd1NzdjZA1UxdFNMdDNkdUlYV0tDWjhnVGl1Tm5mR0k4YWFweDBOTEhDcGR5MVo3SktzM0l5TEFmWUUwXwZDZD',
+    target: '#instagram-feed',
+    layout: '3x3',
+    limit: 9,
+  });
+
+  feed.run();
+</script>
+
+<div id="instagram-feed"></div>
 
    <!-- Modal for full size images on click -->
    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
