@@ -60,7 +60,7 @@
             .w3-hover-opacity {
                 cursor: pointer;
             }
-
+            
             /* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
 
@@ -187,20 +187,19 @@
         <p class="w3-center"><em>We pride ourselves on providing a strong personal relationship between every athlete and the coach. This is achievable by selecting athletes based on a long-term commitment to our program and limiting the number of athletes we take on.</em></p>
         <p class="w3-center"><em>Our squad consists of athletes who are dedicated to taking the next step in their athletic journey specific to Track and Field. Our program runs year round covering events ranging from the 100m through to Cross Country with a strong emphasis on the Australian Domestic Season. </em></p><br>
 
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div id="instagram-feed">
-  <script src="https://unpkg.com/instafeed@2.4.7/dist/instafeed.min.js"></script>
-  <script>
-    var feed = new Instafeed({
-      accessToken: 'IGQVJWbF9SRFBIMEtEbFZAkUXVsa1JlbFZA6ZAnBtSHd6ZAEhSRUlHSUdoSXJpUTNVV2NzWnM4bDd1NzdjZA1UxdFNMdDNkdUlYV0tDWjhnVGl1Tm5mR0k4YWFweDBOTEhDcGR5MVo3SktzM0l5TEFmWUUwXwZDZD',
-      target: '#instagram-feed',
-      layout: '3x3',
-      limit: 9,
-    });
-
-    feed.run();
-  </script>
-</div>
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div id="instagram-feed">
+      <script src="https://unpkg.com/instafeed@2.4.7/dist/instafeed.min.js"></script>
+          <script>
+            var feed = new Instafeed({
+              accessToken: 'IGQVJWbF9SRFBIMEtEbFZAkUXVsa1JlbFZA6ZAnBtSHd6ZAEhSRUlHSUdoSXJpUTNVV2NzWnM4bDd1NzdjZA1UxdFNMdDNkdUlYV0tDWjhnVGl1Tm5mR0k4YWFweDBOTEhDcGR5MVo3SktzM0l5TEFmWUUwXwZDZD',
+              target: '#instagram-feed',
+              layout: '3x3',
+              limit: 9,
+            });
+            feed.run();
+          </script>
+    </div>
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
