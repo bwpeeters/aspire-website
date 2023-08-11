@@ -47,13 +47,31 @@
          cursor: pointer;
          }
 	/* Adjustments for mobile devices */
-        @media screen and (max-width: 600px) {
-            .w3-container {
-                padding: 8px !important;
-            }
-            .w3-padding-64 {
-                padding: 32px !important;
-            }
+@media screen and (max-width: 600px) {
+    .w3-container {
+        padding: 8px !important;
+    }
+    .w3-padding-64 {
+        padding: 32px !important;
+    }
+    /* Adjustments for portrait orientation */
+    @media screen and (orientation: portrait) {
+        .w3-row {
+            display: block;
+        }
+        .w3-col {
+            width: 100%;
+        }
+    }
+}
+
+/* Additional adjustments for medium screens */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .w3-col.m6.w3-padding-large {
+        width: 50%;
+        padding: 16px;
+    }
+}
 	/* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
 
