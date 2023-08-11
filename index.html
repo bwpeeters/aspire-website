@@ -46,6 +46,20 @@
          .w3-hover-opacity {
          cursor: pointer;
          }
+	/* Adjustments for mobile devices */
+        @media screen and (max-width: 600px) {
+            .w3-container {
+                padding: 8px !important;
+            }
+            .w3-padding-64 {
+                padding: 32px !important;
+            }
+	/* Adjustments for portrait orientation */
+	@media screen and (max-width: 600px) and (orientation: portrait) {
+    	/* Add your specific styles for portrait orientation here */
+    	.w3-container {
+        padding: 16px !important; /* For example, adjust padding */
+    }
 	/* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
 
