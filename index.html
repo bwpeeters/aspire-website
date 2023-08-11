@@ -173,30 +173,19 @@
          <p class="w3-center"><em>Our squad consists of athletes who are dedicated to taking the next step in their athletic journey specific to Track and Field. Our program runs year round covering events ranging from the 100m through to Cross Country with a strong emphasis on the Australian Domestic Season. </em></p>
          <br>
          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-         <div id="instafeed-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;"></div>
-         <style>
-            #instafeed-container .image-container {
-            width: 100px; /* Adjust this value to set the width of each container */
-            height: 100px; /* Adjust this value to set the height of each container */
-            overflow: hidden;
-            }
-            #instafeed-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            }
-         </style>
-         <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-         <script type="text/javascript">
-            var userFeed = new Instafeed({
-                get: 'user',
-                target: "instafeed-container",
-                resolution: 'low_resolution',
-                accessToken: 'IGQVJWbF9SRFBIMEtEbFZAkUXVsa1JlbFZA6ZAnBtSHd6ZAEhSRUlHSUdoSXJpUTNVV2NzWnM4bDd1NzdjZA1UxdFNMdDNkdUlYV0tDWjhnVGl1Tm5mR0k4YWFweDBOTEhDcGR5MVo3SktzM0l5TEFmWUUwXwZDZD',
-                limit: 9 // Set the limit to 9 to display only the last 9 posts.
-            });
-            userFeed.run();
-         </script>
+         <h1 style="text-align: center">Show Instagram Feed on your Website</h1>
+    	<div id="instafeed-container"></div>
+	   
+      <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	   <script type="text/javascript">
+	   var userFeed = new Instafeed({
+		      get: 'user',
+		      target: "instafeed-container",
+    	resolution: 'low_resolution',
+		      accessToken: 'IGQVJWbF9SRFBIMEtEbFZAkUXVsa1JlbFZA6ZAnBtSHd6ZAEhSRUlHSUdoSXJpUTNVV2NzWnM4bDd1NzdjZA1UxdFNMdDNkdUlYV0tDWjhnVGl1Tm5mR0k4YWFweDBOTEhDcGR5MVo3SktzM0l5TEFmWUUwXwZDZD'
+	         });
+	   userFeed.run();
+	   </script>
       </div>
       <!-- Modal for full size images on click-->
       <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
