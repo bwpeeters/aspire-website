@@ -55,13 +55,12 @@
                     background-attachment: scroll;
                     min-height: 400px;
                 }
-	 @media screen and (max-width: 600px) {
-            .w3-container {
-                padding: 8px 16px !important;
-            }
-            .w3-padding-64 {
-                padding: 32px !important;
-            }
+	/* Adjustments for portrait orientation */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    /* Add your specific styles for portrait orientation here */
+    .w3-container {
+        padding: 16px !important; /* For example, adjust padding */
+    }
       </style>
    </head>
    <body>
